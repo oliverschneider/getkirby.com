@@ -4,4 +4,4 @@ Guide: uuids
 
 Intro:
 
-Returns the page's Unique ID.
+Returns the page's Unique ID. This is not a magic getter of the field value. The method only returns null, if UUIDs are turned off globally. If UUIDs are enabled in your kirby installation, calling this method will generate a uuid if there is none. If you want to check for the existence of a UUID you will need to get it manually via $page->content().
